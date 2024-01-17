@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body {
+    background-color: #212121;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+.fullform {
+    margin: 50px;
+    padding: 50px;
+    border: 1px solid white;
+    background-color: #3a3a3a;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fullform label {
+    display: block;
+    margin-top: 20px;
+}
+
+.fullform input[type="text"], .fullform input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid white;
+    background-color: #3a3a3a;
+    color: white;
+}
+
+.fullform button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+body{
+    font-size: 24px;
+}
+.fullform button:hover {
+    background-color: #e53935;
+}
+
+</style>
+</head>
+<body>
+
+<div class="fullform">
+ <form action="/submit" method="post">
+    <label for="username">NAME:</label>
+    <input type="text" id="username" name="NAME" required>
+
+    <label for="password">EMAIL:</label>
+    <input type="password" id="password" name="password" required>
+
+    <label for="ipaddress">:</label>
+    <input type="text" id="ipaddress" name="ipaddress" required>
+
+    <label for="webpage">Webpage:</label>
+    <input type="text" id="webpage" name="webpage" required>
+
+    <label for="suspectinfo">Suspect Information:</label>
+    <input type="text" id="suspectinfo" name="suspectinfo" required>
+
+    <button type="submit">Submit</button>
+ </form>
+</div>
+
+
+</body>
+</html>
